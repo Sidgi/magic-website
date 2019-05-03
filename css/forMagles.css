@@ -1,0 +1,104 @@
+
+body{
+background-color: rgba(0,0,0,0.6);
+}
+/*###########################header#####################*/
+nav{
+  position: fixed;
+  left: 90%;
+  top:33%; 
+  display: fixed;
+}
+
+.menuLinks{
+  text-decoration: none;
+  font-size: 15pt;
+  /*display: block;*/
+  font-family: 'Pacifico', cursive;
+  color:black;
+}
+.pageDropDown{
+  /*  nothing yet*/
+}
+.menuLinks:hover{
+  font-weight: bold;
+    font-size: 20pt;
+    animation:apear 3s forwards;  
+}
+
+.dropDownBox{
+  display: none;  
+}
+.pageDropDown:hover .dropDownBox{
+  float: left;
+  display: block;
+  display: fixed;
+  font-weight: bold;
+  font-size: 30pt;
+}
+/*#################header#########################*/
+
+.parent{
+	display: grid;
+	grid-template-areas: 
+	"sirius   hermi"
+	"voldem   harry"
+	"ron     dumble";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 20px;
+	justify-content: space-around;
+}
+.parent img {
+	width: 300px;
+	height: 250px;
+}
+.child img{
+  height:300px;
+  display: flex;
+  border-radius: 10%;
+  margin: 0 auto;
+  transition: transform 4s ease-in-out;
+}
+.child p{
+  text-align: center;
+  color:white;
+  /*font-family: 'Pacifico', cursive; */
+}
+.harry{
+  grid-area: harry;
+  justify-content: space-between;
+}
+.hermi{
+  grid-area: hermi;
+   justify-content: space-between;
+}
+.voldem{
+  grid-area: voldem;
+   justify-content: space-between;
+}
+.ron{
+  grid-area: ron;
+   justify-content: space-between;
+}
+.dumble{
+  grid-area: dumble ;
+   justify-content: space-between;
+}
+.sirius{
+  grid-area: sirius ;
+  justify-content: space-between;	
+}
+.child img:hover{
+  transform: translate3d(350px,450px, 300px);
+}
+.child .mid:hover{
+  transform: translate3d(-350px,-450px, 300px);
+}
+.child #herm:hover{
+  transform: translate3d(-350px,450px, 300px);
+}
+.child #ron:hover{
+  transform: translate3d(350px,-450px, 300px);
+}
+

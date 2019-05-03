@@ -1,0 +1,184 @@
+*{
+	/*border: solid black;*/
+}
+body{
+  background: url(../images/openBook.jpg);
+  background-size: cover;
+  z-index: 0;
+  margin:0;
+}
+
+nav{
+  display: block;
+  position: absolute;
+  left: 60%;
+  top:33%; 
+  display: fixed;
+}
+
+.menuLinks{
+	text-decoration: none;
+	font-size: 15pt;
+	display: block;
+	font-family: 'Pacifico', cursive;
+	color:black;
+}
+.pageDropDown{
+	/*  nothing yet*/
+}
+.menuLinks:hover{
+	font-weight: bold;
+    font-size: 20pt;
+    animation:apear 3s forwards;  
+}
+
+.dropDownBox{
+	display: none;	
+}
+.pageDropDown:hover .dropDownBox{
+	float: left;
+	display: block;
+	display: fixed;
+	font-weight: bold;
+    font-size: 30pt;
+}
+.logo{
+	height: 50px;
+	width: 50px;
+}
+.logo:hover{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+}
+.mystery{
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	position: absolute;
+	margin-top: 42%;
+	left:18%;
+	z-index: 2;
+	word-spacing: 20px;
+	font-size: 15pt;
+	transition: transform 2s;
+	color: black;
+	
+}
+#dumbeldore{
+	margin-top: 14%;
+	margin-left: 25%;
+	border-radius: 20%;
+	z-index: 3;
+	
+
+}
+#dumbeldore:hover{
+ box-shadow: 10px 12px grey;
+ animation: dumbeldore 2s;
+
+}
+
+#pTag{
+	z-index: 3;
+	position: absolute;
+	top:65%;
+	left: 20%;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+
+}
+.mystery:hover{
+    transform: rotate(180deg);
+}
+.navBar{
+	opacity: 0;
+}
+.navBar:hover {
+	animation: apear 1s forwards;
+}
+#makeMagic{
+	box-shadow: 0 10px black ;
+    transform: translateY(-10px);
+    padding: 20px;
+    font-size: 15pt;
+    border-radius: 20px;
+    float: right;
+}
+#makeMagic:active {
+	box-shadow: none ;
+	transform: translateY(0);
+	
+}
+#makeMagic > p{
+	visibility:hidden;
+	position: absolute;
+}
+#makeMagic:hover >p{
+	visibility: visible;
+
+}
+#makeMagic:hover{
+	font-family: 'Pacifico', cursive;
+	box-shadow: none ;
+	transform: translateY(0);
+	cursor: progress;
+}
+
+#hint{
+	position: absolute;
+    top:75%;
+	left:52%;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size: 20pt;
+	transition: transform 3s;
+}
+
+ #hint:hover{
+	transform: translate(-300px,-300px);
+}
+#makeMagicReverse{
+	display: none;
+}
+h1{
+	height: 100px;
+	width:400px;
+	position: absolute;
+	left: 200px;
+	z-index: 3;
+	transition: width 2s;
+}
+h1:hover{
+	height:100px;
+	width: 1000px;
+}
+
+@keyframes apear{
+ 50%{
+  opacity:.2;
+ }
+
+ 100%{
+ 	opacity:1;
+ }
+}
+@keyframes dumbeldore{
+
+	0%{
+		transform: translate3d(-30px,-40px,-50px);
+
+	}
+	30%{
+		transform: translate3d(300px,-250px,200px);
+		opacity: 1;
+	}
+
+	50%{
+		transform: translate3d(1500px,400px,-200px);
+	}
+
+	70%,95%{
+		opacity: 0;
+	}
+
+} 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<style type="text/css" >
+  /*###########################header#####################*/
+nav{
+  display: block;
+  position: absolute;
+  left: 90%;
+  top:33%;
+  display: fixed;
+}
+
+.menuLinks{
+  text-decoration: none;
+  font-size: 15pt;
+  display: block;
+  font-family: 'Pacifico', cursive;
+  color:black;
+}
+.pageDropDown{
+  /*  nothing yet*/
+}
+.menuLinks:hover{
+  font-weight: bold;
+    font-size: 20pt;
+    animation:apear 3s forwards;
+}
+
+.dropDownBox{
+  display: none;
+}
+.pageDropDown:hover .dropDownBox{
+  float: left;
+  display: block;
+  display: fixed;
+  font-weight: bold;
+  font-size: 30pt;
+}
+
+/*#################header#########################*/
+ /*##########Css#Modal*/
+ .out{
+                background-color: rgba(0,0,0,.6);
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 5;
+                display: none;
+
+              }
+              .out:target {
+                display: block;
+
+              }
+              .modalContent{
+                border-radius: 20px;
+                margin:300px auto;
+                position: relative;
+                background-color: black;
+              }
+              #closing{
+                position: absolute;
+                text-align: right;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                font-weight: bold;
+                width: 20pt;
+                color: black;
+                background-color: white;
+              }
+
+	    body{
+	    	background-color:rgba(0,0,0,0.6);
+	    }
+
+        ul{
+        	background-color: yellow;
+        	width: 500px;
+        	margin: 100px auto;
+        }
+		h2{
+			background-color: yellow;
+		}
+
+        #main{
+        	font-size: 25pt;
+        	list-style: none;
+        }
+        h1{
+        	color: white;
+        	text-align: center;
+        }
+        #insideLi{
+        	list-style: none;
+        	text-align: center;
+        	font-size: 20pt;
+          padding: 10px;
+        	/*font-family: ;  	*/
+        }
+        #buton1{
+        	background-color: red;
+        	font-size: 20pt;
+        	border-radius: 20px;
+        	position: absolute;
+        	left: 35%;
+        }
+        .inner{
+          padding: 10px;
+        }
+
+	</style>
+	<title>For Mags</title>
+</head>
+<body>
+ <header>
+
+    <nav class="navBar">
+        <a  class="menuLinks" href="../index.html">Home</a>
+        <div class="pageDropDown">
+             <a class="menuLinks" href="twoWorlds.html">Page of 2 worlds</a>
+             <div class="dropDownBox">
+                <a class="menuLinks dropDownL" href="forMagles.html">Only for magles</a>
+                <a class="menuLinks dropDownL" href="forMags.Html">Only for mags</a>
+                <!-- <a class="menuLinks dropDownL" href="">Page of magic tricks</a>              -->
+             </div>
+        </div>
+        <a class="menuLinks" href="gallery.html">Gallery</a>
+    </nav>
+    </header>
+
+     <ul>
+     	    <li id="main"> List of magic spells</li>
+     	    <li>Expecto Patronum. The Harry Potter spell to end all Harry Potter spells.</li>
+     	    <li>Accio. The perfect charm for lazy people who can't be bothered to get up and fetch the TV remote.</li>
+     	<li>Wingardium Leviosa.Makes things levitate. Sounds fun.</li>
+     	    <li>Expelliarmus.Basically the only spell Harry ever uses when he's in a duel.</li>
+     	    <li>5. Lumos.The spell equivalent of that little torch app on your iPhone.</li>
+     	    <li>Alohomora.That one Hermione keeps using to unlock doors when they go sneaking around in the first book.</li>
+     	    <li>Avada Kedavra.We all know what this one does. How did it manage to make the top 10 favourite list, though?</li>
+     	    <li>Sectumsempra.A mouthful of a curse invented by troubled teen Severus Snape.</li>
+     	    <li>Obliviate.The charm Gilderoy Lockhart uses to accidentally wipe his own memory, the big buffoon.</li>
+     	    <li>Riddikulus.Transforms nasty Boggarts from something scary into something silly.</li>
+     </ul>
+     <button id="buton1" > <a href="#modalId">Please don't press it if you under 21!</a></button>
+            <div id="modalId" class="out">
+            <div class="modalContent">
+              <a href="#closing" id="closing">X</a>
+              <ul style="background-color: white;">
+              	<li id="insideLi"> 3 unforgivible spells</li>
+              	<li class="inner">The Killing Curse (Avada Kedavra)</li>
+              	<li class="inner">The Cruciatus Curse (Crucio)</li>
+              	<li class="inner">The Imperius Curse (Imperio)</li>
+              </ul>
+            </div>
+        </div>
+
+</body>
+</html>
